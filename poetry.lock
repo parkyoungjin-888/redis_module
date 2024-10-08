@@ -16,18 +16,19 @@ name = "data-model-module"
 version = "0.1.1"
 description = ""
 optional = false
-python-versions = ">=3.12,<4.0"
-files = [
-    {file = "data_model_module-0.1.1-py3-none-any.whl", hash = "sha256:dc31cad637469e2fd6071f1596a9467408edb983602fba7e48f7ac26439a42d0"},
-]
+python-versions = "^3.12"
+files = []
+develop = false
 
 [package.dependencies]
-opencv-python = ">=4.10.0.84,<5.0.0.0"
-pydantic = ">=2.9.2,<3.0.0"
+opencv-python = "^4.10.0.84"
+pydantic = "^2.9.2"
 
 [package.source]
-type = "file"
-url = "../data_model_module/dist/data_model_module-0.1.1-py3-none-any.whl"
+type = "git"
+url = "https://github.com/parkyoungjin-888/data_model_module.git"
+reference = "HEAD"
+resolved_reference = "3b40dd3a6d2bca4d101c49774f70c2a91841df51"
 
 [[package]]
 name = "numpy"
@@ -263,4 +264,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "84b69f83e13fa4ba8f94fe995b29dfabfe78b75e0fef35a82849dc11e80809f4"
+content-hash = "d2d39a42521541f0713f263dfd8440aa550becf6c2589bde38d9e987bbd9cf33"

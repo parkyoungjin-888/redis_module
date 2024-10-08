@@ -142,7 +142,8 @@ if __name__ == '__main__':
     from datetime import datetime
     import cv2
 
-    redis_stream_control = RedisStreamControl('127.0.0.1', 6379, 0, 'test_stream', 15,
+    redis_stream_control = RedisStreamControl('127.0.0.1', 6379, 0,
+                                              'test_stream', 15,
                                               'group_1', 'consumer_1')
 
     # for i in range(10):

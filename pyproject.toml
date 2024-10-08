@@ -8,7 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 redis = "^5.1.0"
-data-model-module = {path="../../common/data_model_module/dist/data_model_module-0.1.1-py3-none-any.whl"}
+#data-model-module = {path="../../common/data_model_module/dist/data_model_module-0.1.1-py3-none-any.whl"}
+data-model-module = {git = "https://github.com/parkyoungjin-888/data_model_module.git"}
 
 
 [build-system]
