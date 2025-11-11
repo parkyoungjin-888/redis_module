@@ -24,3 +24,4 @@ poetry install
 + 0.1.0: init
 + 0.1.1: 데이터 업로드를 배치로 동작하도록 수정
 + 0.1.2: data_model을 입력 받도록 수정
++ 0.1.3: data_model를 옵션널로 수정

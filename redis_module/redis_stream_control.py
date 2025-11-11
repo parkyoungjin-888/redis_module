@@ -20,8 +20,7 @@ def decode_dict(byte_dict):
 
 class RedisStreamControl:
     def __init__(self, host: str, port: int, db: int, stream: str, ttl: int,
-                 data_model: Type[BaseModel],
-                 consumer_group: str, consumer_name: str):
+                 data_model: Type[BaseModel] = None, consumer_group: str = None, consumer_name: str = None):
         self._redis = redis.Redis(host=host, port=port, db=db)
         self._stream = stream
         self._ttl = ttl
